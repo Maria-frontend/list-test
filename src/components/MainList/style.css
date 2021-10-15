@@ -1,0 +1,38 @@
+.table {
+  margin: auto;
+  width: 90%;
+  border-collapse: collapse;
+}
+
+.table .table-header {
+  color: white;
+}
+
+.table .table-row {
+  width: 100%;
+  border: 1px solid black;
+  margin-top: 15px;
+}
+
+.table .table-row:nth-child(2n) {
+  background-color: lightgray;
+}
+
+.table .table-row .link,
+.table .table-row .disabled-link {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color: black;
+  text-decoration: none;
+}
+
+.table .table-row .disabled-link {
+  pointer-events: none;
+}
+
+.table .table-row .table-cell {
+  width: 30%;
+  text-align: left;
+}
